@@ -1,0 +1,10 @@
+class CfgSounds
+{
+ sounds[] = {};
+ class music1
+ {
+  name = "music1";
+  sound[] = {"\sounds\song.wav", 300, 1};
+  titles[] = {0,""};
+ };
+};

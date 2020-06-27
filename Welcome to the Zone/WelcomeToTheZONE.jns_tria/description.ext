@@ -1,3 +1,6 @@
+author			= "Scarylaggy";
+onLoadName		= "Welcome to the zone!";
+
 class CfgSounds
 {
  sounds[] = {};

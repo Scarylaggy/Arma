@@ -1,4 +1,4 @@
-version=53;
+version=54;
 class EditorData
 {
 	moveGridStep=1;
@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1164;
+		nextID=1177;
 	};
 	class MarkerIDProvider
 	{
@@ -16,17 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=593;
+		nextID=687;
 	};
 	class Camera
 	{
-		pos[]={3380.5571,261.33417,4062.3286};
-		dir[]={0.83374792,-0.41347486,0.36600137};
-		up[]={0.37862796,0.9105019,0.16621104};
-		aside[]={0.40196851,-1.4061516e-007,-0.91568297};
+		pos[]={7545.3945,373.54971,6776.4106};
+		dir[]={0.54712957,-0.83352417,-0.077461854};
+		up[]={0.82531124,0.55245692,-0.11684754};
+		aside[]={-0.1401881,-5.8185833e-007,-0.9901787};
 	};
 };
 binarizationWanted=0;
+sourceName="WelcomeToTheZONE";
 addons[]=
 {
 	"CUP_Creatures_Military_CDF",
@@ -396,7 +397,7 @@ class AddonsMetaData
 		class Item38
 		{
 			className="A3_Props_F_Enoch";
-			name="Arma 3 Enoch - Decorative and Mission Objects";
+			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -890,6 +891,149 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
+			property="cba_settings_hash";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=4;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="#CBA_HASH#";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=1;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_treatment_woundreopenchance";
+										};
+									};
+								};
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=1;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=2;
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"ANY"
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="cba_settings_hasSettingsFile";
 			expression="false";
 			class Value
@@ -907,7 +1051,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		nAttributes=2;
 	};
 };
 class Mission
@@ -915,27 +1059,29 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
-		timeOfChanges=1800.0002;
 		startWeather=0.2;
-		startWind=0.1000001;
+		startFog=0.32089308;
+		startWind=0.25008479;
 		startWaves=0.1;
 		forecastWeather=0.2;
+		forecastFog=0.29173625;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
+		forecastGust=0.046763863;
 		wavesForced=1;
 		windForced=1;
 		year=2019;
 		month=7;
 		day=3;
-		hour=6;
-		minute=-30;
-		startFogDecay=0.014;
+		hour=2;
+		startFogBase=8.3308105;
+		startFogDecay=0.022925703;
 		forecastFogDecay=0.014;
 	};
 	class Entities
 	{
-		items=16;
+		items=26;
 		class Item0
 		{
 			dataType="Layer";
@@ -1190,14 +1336,14 @@ class Mission
 								class Item4
 								{
 									dataType="Waypoint";
-									position[]={7781.9229,94.89949,8329.3369};
+									position[]={7781.9229,94.899002,8329.3369};
 									class Effects
 									{
 									};
 									showWP="NEVER";
 									id=1136;
 									type="Move";
-									atlOffset=94.39949;
+									atlOffset=94.399002;
 								};
 								class Item5
 								{
@@ -1233,6 +1379,7 @@ class Mission
 							};
 							class Attributes
 							{
+								behaviour="CARELESS";
 							};
 							class CrewLinks
 							{
@@ -1758,6 +1905,7 @@ class Mission
 							};
 							class Attributes
 							{
+								behaviour="CARELESS";
 							};
 							class CrewLinks
 							{
@@ -7820,6 +7968,7 @@ class Mission
 													map="ItemMap";
 													compass="ItemCompass";
 													watch="tf_microdagr";
+													radio="tf_anprc152";
 													gps="ItemGPS";
 													goggles="SE_GP21_Gas_Mask";
 													headgear="rhs_6b28_green";
@@ -8079,6 +8228,7 @@ class Mission
 													map="ItemMap";
 													compass="ItemCompass";
 													watch="tf_microdagr";
+													radio="tf_anprc152";
 													gps="ItemGPS";
 													goggles="SE_GP21_Gas_Mask";
 													headgear="rhs_6b28_green";
@@ -8295,6 +8445,7 @@ class Mission
 													map="ItemMap";
 													compass="ItemCompass";
 													watch="tf_microdagr";
+													radio="tf_anprc152";
 													gps="ItemGPS";
 													goggles="SE_GP21_Gas_Mask";
 													headgear="rhs_6b28_green";
@@ -8567,6 +8718,7 @@ class Mission
 													map="ItemMap";
 													compass="ItemCompass";
 													watch="tf_microdagr";
+													radio="tf_anprc152";
 													gps="ItemGPS";
 													goggles="SE_GP7_Gas_Mask";
 													headgear="rhs_6b28_green";
@@ -8826,6 +8978,7 @@ class Mission
 													map="ItemMap";
 													compass="ItemCompass";
 													watch="tf_microdagr";
+													radio="tf_anprc152";
 													gps="ItemGPS";
 													goggles="SE_GP21_Gas_Mask";
 													headgear="rhs_6b28_green";
@@ -9085,6 +9238,7 @@ class Mission
 													map="ItemMap";
 													compass="ItemCompass";
 													watch="tf_microdagr";
+													radio="tf_anprc152";
 													gps="ItemGPS";
 													goggles="SE_GP21_Gas_Mask";
 													headgear="rhs_6b28_green";
@@ -9344,6 +9498,7 @@ class Mission
 													map="ItemMap";
 													compass="ItemCompass";
 													watch="tf_microdagr";
+													radio="tf_anprc152";
 													gps="ItemGPS";
 													goggles="SE_GP21_Gas_Mask";
 													headgear="rhs_6b28_green";
@@ -9616,6 +9771,7 @@ class Mission
 													map="ItemMap";
 													compass="ItemCompass";
 													watch="tf_microdagr";
+													radio="tf_anprc152";
 													gps="ItemGPS";
 													goggles="SE_GP7_Gas_Mask";
 													headgear="rhs_6b28_green";
@@ -9832,6 +9988,7 @@ class Mission
 													map="ItemMap";
 													compass="ItemCompass";
 													watch="tf_microdagr";
+													radio="tf_anprc152";
 													gps="ItemGPS";
 													goggles="SE_GP21_Gas_Mask";
 													headgear="rhs_6b28_green";
@@ -10048,6 +10205,7 @@ class Mission
 													map="ItemMap";
 													compass="ItemCompass";
 													watch="tf_microdagr";
+													radio="tf_anprc152";
 													gps="ItemGPS";
 													goggles="SE_GP21_Gas_Mask";
 													headgear="rhs_6b28_green";
@@ -10307,6 +10465,7 @@ class Mission
 													map="ItemMap";
 													compass="ItemCompass";
 													watch="tf_microdagr";
+													radio="tf_anprc152";
 													gps="ItemGPS";
 													goggles="SE_GP21_Gas_Mask";
 													headgear="rhs_6b28_green";
@@ -10523,6 +10682,7 @@ class Mission
 													map="ItemMap";
 													compass="ItemCompass";
 													watch="tf_microdagr";
+													radio="tf_anprc152";
 													gps="ItemGPS";
 													goggles="SE_GP21_Gas_Mask";
 													headgear="rhs_6b28_green";
@@ -10596,6 +10756,7 @@ class Mission
 									};
 									class Attributes
 									{
+										behaviour="CARELESS";
 									};
 									class CrewLinks
 									{
@@ -32085,6 +32246,115 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item16
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7654.8633,0,6821.9854};
+			};
+			id=1165;
+			type="anoamly_moduleElectra";
+			atlOffset=0.5;
+		};
+		class Item17
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7654.9019,0,6801.708};
+			};
+			id=1166;
+			type="anoamly_moduleElectra";
+			atlOffset=0.5;
+		};
+		class Item18
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7639.2524,0,6812.6758};
+			};
+			id=1167;
+			type="anoamly_moduleElectra";
+			atlOffset=0.5;
+		};
+		class Item19
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7637.5728,0.01627931,6792.8926};
+			};
+			id=1168;
+			type="anoamly_moduleElectra";
+			atlOffset=0.5;
+		};
+		class Item20
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7788.71,0,6814.0552};
+			};
+			id=1169;
+			type="anoamly_moduleElectra";
+			atlOffset=0.5;
+		};
+		class Item21
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7917.833,0.6697675,6892.1914};
+			};
+			id=1170;
+			type="anoamly_moduleElectra";
+			atlOffset=0.5;
+		};
+		class Item22
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7852.6055,0,6907.7827};
+			};
+			id=1171;
+			type="anoamly_moduleElectra";
+			atlOffset=0.5;
+		};
+		class Item23
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7809.3799,0,6950.3887};
+			};
+			id=1172;
+			type="anoamly_moduleElectra";
+			atlOffset=0.5;
+		};
+		class Item24
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7763.0303,0,6975.0483};
+			};
+			id=1173;
+			type="anoamly_moduleElectra";
+			atlOffset=0.5;
+		};
+		class Item25
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7723.5278,0.5,6871.8623};
+			};
+			id=1174;
+			type="anoamly_moduleFruitPunch";
 		};
 	};
 	class Connections
